@@ -1,9 +1,44 @@
-.container {}
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark); //0 in the x-axis
+    //2rem in the y-axis 6rem for the blur and then .3 for opacity
 
-.header {}
+    min-height: 50rem;
+}
 
-.content {}
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
 
-.sidebar {}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.hotel-view {}
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 18%; //dont want the element to grow and
+    //we don't want it to shring but we want it to always
+    //be 18%
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    background-color: #fff;
+    background-color: orangered;
+    height: 80rem;
+
+    flex: 1; //element should grow as much as it can
+}
